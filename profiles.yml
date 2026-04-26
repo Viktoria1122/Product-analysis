@@ -1,0 +1,12 @@
+final_case_variant_b:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: final-case-variant-b
+      dataset: analytics_marts
+      threads: 4
+      keyfile: /Users/svitlanamarkus/Desktop/Product analysis Genesis/ucu-workshop/final-case-variant-b-0d5f5ff7abae.json
+      location: US
+      priority: interactive

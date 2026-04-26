@@ -1,0 +1,24 @@
+version: 2
+sources:
+  - name: marketing_source
+    database: final-case-variant-b
+    schema: raw_marketing
+    tables:
+      - name: creative_metadata
+      - name: creative_stats_daily
+      - name: purchase_events
+
+  - name: product_source
+    database: final-case-variant-b
+    schema: raw_product
+    tables:
+      - name: events
+      - name: user_signup
+
+  - name: revenue_source
+    database: final-case-variant-b
+    schema: raw_revenue
+    tables:
+      - name: customers
+      - name: payments
+      - name: subscriptions
